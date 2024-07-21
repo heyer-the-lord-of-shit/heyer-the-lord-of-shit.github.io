@@ -1,3 +1,15 @@
+body {
+    background: linear-gradient(0, rgb(0, 14, 52) 0%, #2D51D3 50%, #2D51D3 100%);
+    font-weight: bolder;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+*::after {
+    pointer-events: all;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -20,53 +32,13 @@
     border: 0px none #ffffff;
 }
 
+/*scroll*/
+/*banner*/
 #banner {
     background-image: url("bg.png");
     padding: 10px;
     color: white;
     height: 100px;
-}
-
-.tab {
-    border: 5px solid #007231;
-    padding: 5px;
-    overflow: auto;
-    height: calc(100vh - 140px);
-}
-
-.game {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(0, rgb(0, 39, 146) 0%, rgb(0, 44, 242) 50%, rgb(45, 129, 255) 100%);
-    font-family: Papyrus;
-    color: white;
-    width: 150px;
-    height: 150px;
-    //-border: 5px solid #003772;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.game>a>img {
-    border-radius: 15px;
-}
-
-#menu {
-    position: absolute;
-    top: 92px;
-}
-
-.tabBtn {
-    font-family: Papyrus;
-    padding: 0;
-    font-size: 15px;
-    background: transparent;
-    font-weight: bolder;
-    border-style: solid;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    border-color: rgb(0, 140, 255);
-    color: rgb(0, 140, 255);
-    width: 100px;
 }
 
 #textOverlap {
@@ -92,10 +64,85 @@
     position: absolute;
 }
 
-body {
-    background: url(weed.png);
-    font-weight: bolder;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+#menu {
+    position: absolute;
+    top: 92px;
 }
+
+.tabBtn {
+    font-family: Papyrus;
+    padding: 0;
+    font-size: 15px;
+    background: transparent;
+    font-weight: bolder;
+    border-style: solid;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-color: transparent;
+    color: rgb(0, 140, 255);
+    width: 100px;
+}
+
+#about:hover::after {
+    position: absolute;
+    padding: 5px;
+    content: 'just few dumbfucks smokin weed or crack and making games. lynkoGD - musician, heyer - developer and CEO and site operator, drip sand - developer, NEO - everyone`s favorite jeeb(weeb but actually japanese), hacker - pro gamer,lordx8066 - russian mafia,saturn - Co-founder and mascot,L0L - Co-founder and former CEO(got thrown off by heyer),ethanvandermer675 - cutsie :3,shark - OG and voice actor for demo,flowey_the_flower_9999 - PUSSY,varvarjeg - everyones favorite nigga(he gave me n-word pass i can say dis >:))';
+    background-color: #f1ff86;
+    border: 2px solid #4a5300;
+    z-index: 1;
+    color: #4a5300;
+    border-radius: 5px;
+}
+
+#socials:hover::after {
+    position: absolute;
+    padding: 5px;
+    content: 'FUCK TWITTER';
+    background-color: #f1ff86;
+    border: 2px solid #4a5300;
+    z-index: 1;
+    color: #4a5300;
+    border-radius: 5px;
+}
+
+/*banner*/
+
+.tab {
+    border: 5px solid #00723131;
+    padding: 5px;
+    overflow: auto;
+    height: calc(100vh - 140px);
+    width: 200px;
+}
+
+/*games*/
+.game {
+    opacity: 50%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0, rgb(0, 39, 146) 0%, rgb(0, 44, 242) 50%, rgb(45, 129, 255) 100%);
+    font-family: Papyrus;
+    color: white;
+    width: 150px;
+    --height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.game>a>img {
+    border-radius: 15px;
+}
+
+#wmb:hover::after {
+    content: '- dum shooter inspired by tf2 and ultrakill';
+}
+
+#breathsim:hover::after {
+    content: '- In this game you can breath......yeah. made for pinoprime in Roast me jam';
+}
+
+#vamprock:hover::after {
+    content: '- you are a vampire rock teleport inside of humans to make them EXPLODE';
+}
+
+/*games*/
