@@ -4,10 +4,16 @@ body {
     padding: 0px;
     margin: 0px;
     height: 100vh;
+    overflow: hidden;
 }
 
 *::after {
     pointer-events: all;
+}
+
+@font-face {
+    font-family: 'papyrus.ttf';
+    src: url("papyrus.ttf") format("truetype");
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -58,7 +64,7 @@ body {
 
 #banner>span {
     font-size: 80px;
-    font-family: Papyrus;
+    font-family: 'papyrus.ttf';
 
     margin-left: 100px;
     position: absolute;
@@ -70,7 +76,7 @@ body {
 }
 
 .tabBtn {
-    font-family: Papyrus;
+    font-family: 'papyrus.ttf';
     padding: 0;
     font-size: 15px;
     background: transparent;
@@ -86,7 +92,7 @@ body {
 #about:hover::after {
     position: absolute;
     padding: 5px;
-    content: 'just few dumbfucks smokin weed or crack and making games. lynkoGD - musician, heyer - developer and CEO and site operator, drip sand - developer, NEO - everyone`s favorite jeeb(weeb but actually japanese), hacker - pro gamer,lordx8066 - russian mafia,saturn - Co-founder and mascot,L0L - Co-founder and former CEO(got thrown off by heyer),ethanvandermer675 - cutsie :3,shark - OG and voice actor for demo,flowey_the_flower_9999 - PUSSY,varvarjeg - everyones favorite nigga(he gave me n-word pass i can say dis >:))';
+    content: 'just few dumbfucks smokin weed or crack and making games. lynkoGD - musician, heyer - developer and CEO and site operator, drip sand - developer, NEO - everyone`s favorite jeeb(weeb but actually japanese), hacker - pro gamer,lordx8066 - russian mafia,saturn - Co-founder and mascot,L0L - Co-founder and former CEO(got thrown off by heyer),ethanvandermer675 - cutsie :3,shark - OG and voice actor for demo,flowey_the_flower_9999 - PUSSY,varvarjeg - everyones favorite nigga(he gave me n-word pass i can say dis >:)),Mayo - best of bronies';
     background-color: #f1ff86;
     border: 2px solid #4a5300;
     z-index: 1;
@@ -108,11 +114,13 @@ body {
 /*banner*/
 
 .tab {
+    display: inline-block;
     border: 5px solid #00723131;
     padding: 5px;
     overflow: auto;
     height: calc(100vh - 140px);
     width: 200px;
+    overflow-x: hidden;
 }
 
 /*games*/
@@ -120,7 +128,7 @@ body {
     opacity: 50%;
     background: rgb(2, 0, 36);
     background: linear-gradient(0, rgb(0, 39, 146) 0%, rgb(0, 44, 242) 50%, rgb(45, 129, 255) 100%);
-    font-family: Papyrus;
+    font-family: 'papyrus.ttf';
     color: white;
     width: 150px;
     --height: 150px;
@@ -146,3 +154,42 @@ body {
 }
 
 /*games*/
+
+/*chat*/
+comment {
+    opacity: 50%;
+    display: block;
+    background: linear-gradient(0, rgb(0, 14, 52) 0%, #0094d8 100%);
+    margin-bottom: 5px;
+}
+
+comment::after {
+    position: relative;
+    left: calc(100%);
+}
+
+
+comment::after,
+comment::before {
+    content: 'A';
+    display: inline-block;
+    width: 5px;
+    min-height: 50px;
+    background: linear-gradient(0, rgb(0, 14, 52) 0%, #484848 100%);
+    color: transparent;
+}
+
+comment::before {
+    position: absolute;
+}
+
+comment>span {
+    opacity: 70%;
+    color: #ffffff;
+    font-family: 'papyrus.ttf';
+    padding: 5px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+/*chat*/
